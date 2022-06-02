@@ -1,0 +1,1176 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C4F1A6892848A1B100D12CEB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F1A6882848A1B100D12CEB /* AppDelegate.swift */; };
+		C4F1A68B2848A1B100D12CEB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F1A68A2848A1B100D12CEB /* SceneDelegate.swift */; };
+		C4F1A68D2848A1B100D12CEB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F1A68C2848A1B100D12CEB /* ViewController.swift */; };
+		C4F1A6902848A1B100D12CEB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4F1A68E2848A1B100D12CEB /* Main.storyboard */; };
+		C4F1A6922848A1B200D12CEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4F1A6912848A1B200D12CEB /* Assets.xcassets */; };
+		C4F1A6952848A1B200D12CEB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4F1A6932848A1B200D12CEB /* LaunchScreen.storyboard */; };
+		C4F1A6A02848A1B200D12CEB /* BawaYa_DesignRevisedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F1A69F2848A1B200D12CEB /* BawaYa_DesignRevisedTests.swift */; };
+		C4F1A6AA2848A1B200D12CEB /* BawaYa_DesignRevisedUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F1A6A92848A1B200D12CEB /* BawaYa_DesignRevisedUITests.swift */; };
+		C4F1A6AC2848A1B200D12CEB /* BawaYa_DesignRevisedUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F1A6AB2848A1B200D12CEB /* BawaYa_DesignRevisedUITestsLaunchTests.swift */; };
+		C4F1A6B02848A1B200D12CEB /* BawaYa_DesignRevised WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = C4F1A6AF2848A1B200D12CEB /* BawaYa_DesignRevised WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C4F1A6B62848A1B200D12CEB /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4F1A6B42848A1B200D12CEB /* Interface.storyboard */; };
+		C4F1A6B82848A1B300D12CEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4F1A6B72848A1B300D12CEB /* Assets.xcassets */; };
+		C4F1A6BE2848A1B300D12CEB /* BawaYa_DesignRevised WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C4F1A6BD2848A1B300D12CEB /* BawaYa_DesignRevised WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C4F1A6C32848A1B300D12CEB /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F1A6C22848A1B300D12CEB /* InterfaceController.swift */; };
+		C4F1A6C52848A1B300D12CEB /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F1A6C42848A1B300D12CEB /* ExtensionDelegate.swift */; };
+		C4F1A6C72848A1B300D12CEB /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F1A6C62848A1B300D12CEB /* NotificationController.swift */; };
+		C4F1A6C92848A1B300D12CEB /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F1A6C82848A1B300D12CEB /* ComplicationController.swift */; };
+		C4F1A6CB2848A1B300D12CEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4F1A6CA2848A1B300D12CEB /* Assets.xcassets */; };
+		C4F1A6D72848A1B300D12CEB /* BawaYa_DesignRevised_WatchKit_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F1A6D62848A1B300D12CEB /* BawaYa_DesignRevised_WatchKit_AppTests.swift */; };
+		C4F1A6E12848A1B300D12CEB /* BawaYa_DesignRevised_WatchKit_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F1A6E02848A1B300D12CEB /* BawaYa_DesignRevised_WatchKit_AppUITests.swift */; };
+		C4F1A6E32848A1B300D12CEB /* BawaYa_DesignRevised_WatchKit_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F1A6E22848A1B300D12CEB /* BawaYa_DesignRevised_WatchKit_AppUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C4F1A69C2848A1B200D12CEB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C4F1A67D2848A1B100D12CEB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C4F1A6842848A1B100D12CEB;
+			remoteInfo = BawaYa_DesignRevised;
+		};
+		C4F1A6A62848A1B200D12CEB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C4F1A67D2848A1B100D12CEB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C4F1A6842848A1B100D12CEB;
+			remoteInfo = BawaYa_DesignRevised;
+		};
+		C4F1A6B12848A1B200D12CEB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C4F1A67D2848A1B100D12CEB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C4F1A6AE2848A1B200D12CEB;
+			remoteInfo = "BawaYa_DesignRevised WatchKit App";
+		};
+		C4F1A6BF2848A1B300D12CEB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C4F1A67D2848A1B100D12CEB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C4F1A6BC2848A1B300D12CEB;
+			remoteInfo = "BawaYa_DesignRevised WatchKit Extension";
+		};
+		C4F1A6D32848A1B300D12CEB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C4F1A67D2848A1B100D12CEB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C4F1A6BC2848A1B300D12CEB;
+			remoteInfo = "BawaYa_DesignRevised WatchKit Extension";
+		};
+		C4F1A6DD2848A1B300D12CEB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C4F1A67D2848A1B100D12CEB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C4F1A6AE2848A1B200D12CEB;
+			remoteInfo = "BawaYa_DesignRevised WatchKit App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C4F1A6E92848A1B300D12CEB /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C4F1A6BE2848A1B300D12CEB /* BawaYa_DesignRevised WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4F1A6ED2848A1B300D12CEB /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				C4F1A6B02848A1B200D12CEB /* BawaYa_DesignRevised WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C4F1A6852848A1B100D12CEB /* BawaYa_DesignRevised.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BawaYa_DesignRevised.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4F1A6882848A1B100D12CEB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C4F1A68A2848A1B100D12CEB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C4F1A68C2848A1B100D12CEB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C4F1A68F2848A1B100D12CEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C4F1A6912848A1B200D12CEB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C4F1A6942848A1B200D12CEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C4F1A6962848A1B200D12CEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4F1A69B2848A1B200D12CEB /* BawaYa_DesignRevisedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BawaYa_DesignRevisedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4F1A69F2848A1B200D12CEB /* BawaYa_DesignRevisedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BawaYa_DesignRevisedTests.swift; sourceTree = "<group>"; };
+		C4F1A6A52848A1B200D12CEB /* BawaYa_DesignRevisedUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BawaYa_DesignRevisedUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4F1A6A92848A1B200D12CEB /* BawaYa_DesignRevisedUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BawaYa_DesignRevisedUITests.swift; sourceTree = "<group>"; };
+		C4F1A6AB2848A1B200D12CEB /* BawaYa_DesignRevisedUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BawaYa_DesignRevisedUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C4F1A6AF2848A1B200D12CEB /* BawaYa_DesignRevised WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BawaYa_DesignRevised WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4F1A6B52848A1B200D12CEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		C4F1A6B72848A1B300D12CEB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C4F1A6BD2848A1B300D12CEB /* BawaYa_DesignRevised WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "BawaYa_DesignRevised WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4F1A6C22848A1B300D12CEB /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		C4F1A6C42848A1B300D12CEB /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		C4F1A6C62848A1B300D12CEB /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		C4F1A6C82848A1B300D12CEB /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		C4F1A6CA2848A1B300D12CEB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C4F1A6CC2848A1B300D12CEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4F1A6CD2848A1B300D12CEB /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		C4F1A6D22848A1B300D12CEB /* BawaYa_DesignRevised WatchKit AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BawaYa_DesignRevised WatchKit AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4F1A6D62848A1B300D12CEB /* BawaYa_DesignRevised_WatchKit_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BawaYa_DesignRevised_WatchKit_AppTests.swift; sourceTree = "<group>"; };
+		C4F1A6DC2848A1B300D12CEB /* BawaYa_DesignRevised WatchKit AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BawaYa_DesignRevised WatchKit AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4F1A6E02848A1B300D12CEB /* BawaYa_DesignRevised_WatchKit_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BawaYa_DesignRevised_WatchKit_AppUITests.swift; sourceTree = "<group>"; };
+		C4F1A6E22848A1B300D12CEB /* BawaYa_DesignRevised_WatchKit_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BawaYa_DesignRevised_WatchKit_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C4F1A6822848A1B100D12CEB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4F1A6982848A1B200D12CEB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4F1A6A22848A1B200D12CEB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4F1A6BA2848A1B300D12CEB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4F1A6CF2848A1B300D12CEB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4F1A6D92848A1B300D12CEB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C4F1A67C2848A1B100D12CEB = {
+			isa = PBXGroup;
+			children = (
+				C4F1A6872848A1B100D12CEB /* BawaYa_DesignRevised */,
+				C4F1A69E2848A1B200D12CEB /* BawaYa_DesignRevisedTests */,
+				C4F1A6A82848A1B200D12CEB /* BawaYa_DesignRevisedUITests */,
+				C4F1A6B32848A1B200D12CEB /* BawaYa_DesignRevised WatchKit App */,
+				C4F1A6C12848A1B300D12CEB /* BawaYa_DesignRevised WatchKit Extension */,
+				C4F1A6D52848A1B300D12CEB /* BawaYa_DesignRevised WatchKit AppTests */,
+				C4F1A6DF2848A1B300D12CEB /* BawaYa_DesignRevised WatchKit AppUITests */,
+				C4F1A6862848A1B100D12CEB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C4F1A6862848A1B100D12CEB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C4F1A6852848A1B100D12CEB /* BawaYa_DesignRevised.app */,
+				C4F1A69B2848A1B200D12CEB /* BawaYa_DesignRevisedTests.xctest */,
+				C4F1A6A52848A1B200D12CEB /* BawaYa_DesignRevisedUITests.xctest */,
+				C4F1A6AF2848A1B200D12CEB /* BawaYa_DesignRevised WatchKit App.app */,
+				C4F1A6BD2848A1B300D12CEB /* BawaYa_DesignRevised WatchKit Extension.appex */,
+				C4F1A6D22848A1B300D12CEB /* BawaYa_DesignRevised WatchKit AppTests.xctest */,
+				C4F1A6DC2848A1B300D12CEB /* BawaYa_DesignRevised WatchKit AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C4F1A6872848A1B100D12CEB /* BawaYa_DesignRevised */ = {
+			isa = PBXGroup;
+			children = (
+				C4F1A6882848A1B100D12CEB /* AppDelegate.swift */,
+				C4F1A68A2848A1B100D12CEB /* SceneDelegate.swift */,
+				C4F1A68C2848A1B100D12CEB /* ViewController.swift */,
+				C4F1A68E2848A1B100D12CEB /* Main.storyboard */,
+				C4F1A6912848A1B200D12CEB /* Assets.xcassets */,
+				C4F1A6932848A1B200D12CEB /* LaunchScreen.storyboard */,
+				C4F1A6962848A1B200D12CEB /* Info.plist */,
+			);
+			path = BawaYa_DesignRevised;
+			sourceTree = "<group>";
+		};
+		C4F1A69E2848A1B200D12CEB /* BawaYa_DesignRevisedTests */ = {
+			isa = PBXGroup;
+			children = (
+				C4F1A69F2848A1B200D12CEB /* BawaYa_DesignRevisedTests.swift */,
+			);
+			path = BawaYa_DesignRevisedTests;
+			sourceTree = "<group>";
+		};
+		C4F1A6A82848A1B200D12CEB /* BawaYa_DesignRevisedUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C4F1A6A92848A1B200D12CEB /* BawaYa_DesignRevisedUITests.swift */,
+				C4F1A6AB2848A1B200D12CEB /* BawaYa_DesignRevisedUITestsLaunchTests.swift */,
+			);
+			path = BawaYa_DesignRevisedUITests;
+			sourceTree = "<group>";
+		};
+		C4F1A6B32848A1B200D12CEB /* BawaYa_DesignRevised WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				C4F1A6B42848A1B200D12CEB /* Interface.storyboard */,
+				C4F1A6B72848A1B300D12CEB /* Assets.xcassets */,
+			);
+			path = "BawaYa_DesignRevised WatchKit App";
+			sourceTree = "<group>";
+		};
+		C4F1A6C12848A1B300D12CEB /* BawaYa_DesignRevised WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				C4F1A6C22848A1B300D12CEB /* InterfaceController.swift */,
+				C4F1A6C42848A1B300D12CEB /* ExtensionDelegate.swift */,
+				C4F1A6C62848A1B300D12CEB /* NotificationController.swift */,
+				C4F1A6C82848A1B300D12CEB /* ComplicationController.swift */,
+				C4F1A6CA2848A1B300D12CEB /* Assets.xcassets */,
+				C4F1A6CC2848A1B300D12CEB /* Info.plist */,
+				C4F1A6CD2848A1B300D12CEB /* PushNotificationPayload.apns */,
+			);
+			path = "BawaYa_DesignRevised WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		C4F1A6D52848A1B300D12CEB /* BawaYa_DesignRevised WatchKit AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				C4F1A6D62848A1B300D12CEB /* BawaYa_DesignRevised_WatchKit_AppTests.swift */,
+			);
+			path = "BawaYa_DesignRevised WatchKit AppTests";
+			sourceTree = "<group>";
+		};
+		C4F1A6DF2848A1B300D12CEB /* BawaYa_DesignRevised WatchKit AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C4F1A6E02848A1B300D12CEB /* BawaYa_DesignRevised_WatchKit_AppUITests.swift */,
+				C4F1A6E22848A1B300D12CEB /* BawaYa_DesignRevised_WatchKit_AppUITestsLaunchTests.swift */,
+			);
+			path = "BawaYa_DesignRevised WatchKit AppUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C4F1A6842848A1B100D12CEB /* BawaYa_DesignRevised */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4F1A6EE2848A1B300D12CEB /* Build configuration list for PBXNativeTarget "BawaYa_DesignRevised" */;
+			buildPhases = (
+				C4F1A6812848A1B100D12CEB /* Sources */,
+				C4F1A6822848A1B100D12CEB /* Frameworks */,
+				C4F1A6832848A1B100D12CEB /* Resources */,
+				C4F1A6ED2848A1B300D12CEB /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C4F1A6B22848A1B200D12CEB /* PBXTargetDependency */,
+			);
+			name = BawaYa_DesignRevised;
+			productName = BawaYa_DesignRevised;
+			productReference = C4F1A6852848A1B100D12CEB /* BawaYa_DesignRevised.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C4F1A69A2848A1B200D12CEB /* BawaYa_DesignRevisedTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4F1A6F12848A1B300D12CEB /* Build configuration list for PBXNativeTarget "BawaYa_DesignRevisedTests" */;
+			buildPhases = (
+				C4F1A6972848A1B200D12CEB /* Sources */,
+				C4F1A6982848A1B200D12CEB /* Frameworks */,
+				C4F1A6992848A1B200D12CEB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C4F1A69D2848A1B200D12CEB /* PBXTargetDependency */,
+			);
+			name = BawaYa_DesignRevisedTests;
+			productName = BawaYa_DesignRevisedTests;
+			productReference = C4F1A69B2848A1B200D12CEB /* BawaYa_DesignRevisedTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C4F1A6A42848A1B200D12CEB /* BawaYa_DesignRevisedUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4F1A6F42848A1B300D12CEB /* Build configuration list for PBXNativeTarget "BawaYa_DesignRevisedUITests" */;
+			buildPhases = (
+				C4F1A6A12848A1B200D12CEB /* Sources */,
+				C4F1A6A22848A1B200D12CEB /* Frameworks */,
+				C4F1A6A32848A1B200D12CEB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C4F1A6A72848A1B200D12CEB /* PBXTargetDependency */,
+			);
+			name = BawaYa_DesignRevisedUITests;
+			productName = BawaYa_DesignRevisedUITests;
+			productReference = C4F1A6A52848A1B200D12CEB /* BawaYa_DesignRevisedUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		C4F1A6AE2848A1B200D12CEB /* BawaYa_DesignRevised WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4F1A6EA2848A1B300D12CEB /* Build configuration list for PBXNativeTarget "BawaYa_DesignRevised WatchKit App" */;
+			buildPhases = (
+				C4F1A6AD2848A1B200D12CEB /* Resources */,
+				C4F1A6E92848A1B300D12CEB /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C4F1A6C02848A1B300D12CEB /* PBXTargetDependency */,
+			);
+			name = "BawaYa_DesignRevised WatchKit App";
+			productName = "BawaYa_DesignRevised WatchKit App";
+			productReference = C4F1A6AF2848A1B200D12CEB /* BawaYa_DesignRevised WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		C4F1A6BC2848A1B300D12CEB /* BawaYa_DesignRevised WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4F1A6E62848A1B300D12CEB /* Build configuration list for PBXNativeTarget "BawaYa_DesignRevised WatchKit Extension" */;
+			buildPhases = (
+				C4F1A6B92848A1B300D12CEB /* Sources */,
+				C4F1A6BA2848A1B300D12CEB /* Frameworks */,
+				C4F1A6BB2848A1B300D12CEB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BawaYa_DesignRevised WatchKit Extension";
+			productName = "BawaYa_DesignRevised WatchKit Extension";
+			productReference = C4F1A6BD2848A1B300D12CEB /* BawaYa_DesignRevised WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		C4F1A6D12848A1B300D12CEB /* BawaYa_DesignRevised WatchKit AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4F1A6F72848A1B300D12CEB /* Build configuration list for PBXNativeTarget "BawaYa_DesignRevised WatchKit AppTests" */;
+			buildPhases = (
+				C4F1A6CE2848A1B300D12CEB /* Sources */,
+				C4F1A6CF2848A1B300D12CEB /* Frameworks */,
+				C4F1A6D02848A1B300D12CEB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C4F1A6D42848A1B300D12CEB /* PBXTargetDependency */,
+			);
+			name = "BawaYa_DesignRevised WatchKit AppTests";
+			productName = "BawaYa_DesignRevised WatchKit AppTests";
+			productReference = C4F1A6D22848A1B300D12CEB /* BawaYa_DesignRevised WatchKit AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C4F1A6DB2848A1B300D12CEB /* BawaYa_DesignRevised WatchKit AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4F1A6FA2848A1B300D12CEB /* Build configuration list for PBXNativeTarget "BawaYa_DesignRevised WatchKit AppUITests" */;
+			buildPhases = (
+				C4F1A6D82848A1B300D12CEB /* Sources */,
+				C4F1A6D92848A1B300D12CEB /* Frameworks */,
+				C4F1A6DA2848A1B300D12CEB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C4F1A6DE2848A1B300D12CEB /* PBXTargetDependency */,
+			);
+			name = "BawaYa_DesignRevised WatchKit AppUITests";
+			productName = "BawaYa_DesignRevised WatchKit AppUITests";
+			productReference = C4F1A6DC2848A1B300D12CEB /* BawaYa_DesignRevised WatchKit AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C4F1A67D2848A1B100D12CEB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					C4F1A6842848A1B100D12CEB = {
+						CreatedOnToolsVersion = 13.3;
+					};
+					C4F1A69A2848A1B200D12CEB = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = C4F1A6842848A1B100D12CEB;
+					};
+					C4F1A6A42848A1B200D12CEB = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = C4F1A6842848A1B100D12CEB;
+					};
+					C4F1A6AE2848A1B200D12CEB = {
+						CreatedOnToolsVersion = 13.3;
+					};
+					C4F1A6BC2848A1B300D12CEB = {
+						CreatedOnToolsVersion = 13.3;
+					};
+					C4F1A6D12848A1B300D12CEB = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = C4F1A6BC2848A1B300D12CEB;
+					};
+					C4F1A6DB2848A1B300D12CEB = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = C4F1A6AE2848A1B200D12CEB;
+					};
+				};
+			};
+			buildConfigurationList = C4F1A6802848A1B100D12CEB /* Build configuration list for PBXProject "BawaYa_DesignRevised" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C4F1A67C2848A1B100D12CEB;
+			productRefGroup = C4F1A6862848A1B100D12CEB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C4F1A6842848A1B100D12CEB /* BawaYa_DesignRevised */,
+				C4F1A69A2848A1B200D12CEB /* BawaYa_DesignRevisedTests */,
+				C4F1A6A42848A1B200D12CEB /* BawaYa_DesignRevisedUITests */,
+				C4F1A6AE2848A1B200D12CEB /* BawaYa_DesignRevised WatchKit App */,
+				C4F1A6BC2848A1B300D12CEB /* BawaYa_DesignRevised WatchKit Extension */,
+				C4F1A6D12848A1B300D12CEB /* BawaYa_DesignRevised WatchKit AppTests */,
+				C4F1A6DB2848A1B300D12CEB /* BawaYa_DesignRevised WatchKit AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C4F1A6832848A1B100D12CEB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4F1A6952848A1B200D12CEB /* LaunchScreen.storyboard in Resources */,
+				C4F1A6922848A1B200D12CEB /* Assets.xcassets in Resources */,
+				C4F1A6902848A1B100D12CEB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4F1A6992848A1B200D12CEB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4F1A6A32848A1B200D12CEB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4F1A6AD2848A1B200D12CEB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4F1A6B82848A1B300D12CEB /* Assets.xcassets in Resources */,
+				C4F1A6B62848A1B200D12CEB /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4F1A6BB2848A1B300D12CEB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4F1A6CB2848A1B300D12CEB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4F1A6D02848A1B300D12CEB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4F1A6DA2848A1B300D12CEB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C4F1A6812848A1B100D12CEB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4F1A68D2848A1B100D12CEB /* ViewController.swift in Sources */,
+				C4F1A6892848A1B100D12CEB /* AppDelegate.swift in Sources */,
+				C4F1A68B2848A1B100D12CEB /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4F1A6972848A1B200D12CEB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4F1A6A02848A1B200D12CEB /* BawaYa_DesignRevisedTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4F1A6A12848A1B200D12CEB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4F1A6AC2848A1B200D12CEB /* BawaYa_DesignRevisedUITestsLaunchTests.swift in Sources */,
+				C4F1A6AA2848A1B200D12CEB /* BawaYa_DesignRevisedUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4F1A6B92848A1B300D12CEB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4F1A6C72848A1B300D12CEB /* NotificationController.swift in Sources */,
+				C4F1A6C92848A1B300D12CEB /* ComplicationController.swift in Sources */,
+				C4F1A6C52848A1B300D12CEB /* ExtensionDelegate.swift in Sources */,
+				C4F1A6C32848A1B300D12CEB /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4F1A6CE2848A1B300D12CEB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4F1A6D72848A1B300D12CEB /* BawaYa_DesignRevised_WatchKit_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4F1A6D82848A1B300D12CEB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4F1A6E12848A1B300D12CEB /* BawaYa_DesignRevised_WatchKit_AppUITests.swift in Sources */,
+				C4F1A6E32848A1B300D12CEB /* BawaYa_DesignRevised_WatchKit_AppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C4F1A69D2848A1B200D12CEB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C4F1A6842848A1B100D12CEB /* BawaYa_DesignRevised */;
+			targetProxy = C4F1A69C2848A1B200D12CEB /* PBXContainerItemProxy */;
+		};
+		C4F1A6A72848A1B200D12CEB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C4F1A6842848A1B100D12CEB /* BawaYa_DesignRevised */;
+			targetProxy = C4F1A6A62848A1B200D12CEB /* PBXContainerItemProxy */;
+		};
+		C4F1A6B22848A1B200D12CEB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C4F1A6AE2848A1B200D12CEB /* BawaYa_DesignRevised WatchKit App */;
+			targetProxy = C4F1A6B12848A1B200D12CEB /* PBXContainerItemProxy */;
+		};
+		C4F1A6C02848A1B300D12CEB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C4F1A6BC2848A1B300D12CEB /* BawaYa_DesignRevised WatchKit Extension */;
+			targetProxy = C4F1A6BF2848A1B300D12CEB /* PBXContainerItemProxy */;
+		};
+		C4F1A6D42848A1B300D12CEB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C4F1A6BC2848A1B300D12CEB /* BawaYa_DesignRevised WatchKit Extension */;
+			targetProxy = C4F1A6D32848A1B300D12CEB /* PBXContainerItemProxy */;
+		};
+		C4F1A6DE2848A1B300D12CEB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C4F1A6AE2848A1B200D12CEB /* BawaYa_DesignRevised WatchKit App */;
+			targetProxy = C4F1A6DD2848A1B300D12CEB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C4F1A68E2848A1B100D12CEB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C4F1A68F2848A1B100D12CEB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C4F1A6932848A1B200D12CEB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C4F1A6942848A1B200D12CEB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		C4F1A6B42848A1B200D12CEB /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C4F1A6B52848A1B200D12CEB /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C4F1A6E42848A1B300D12CEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C4F1A6E52848A1B300D12CEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		C4F1A6E72848A1B300D12CEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F3D69PH55A;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "BawaYa_DesignRevised WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "BawaYa_DesignRevised WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKExtensionDelegateClassName = "$(PRODUCT_MODULE_NAME).ExtensionDelegate";
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hada.BawaYa-DesignRevised.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		C4F1A6E82848A1B300D12CEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F3D69PH55A;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "BawaYa_DesignRevised WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "BawaYa_DesignRevised WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKExtensionDelegateClassName = "$(PRODUCT_MODULE_NAME).ExtensionDelegate";
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hada.BawaYa-DesignRevised.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Release;
+		};
+		C4F1A6EB2848A1B300D12CEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F3D69PH55A;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = BawaYa_DesignRevised_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "BawaYa_DesignRevised WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "com.hada.BawaYa-DesignRevised";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hada.BawaYa-DesignRevised.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		C4F1A6EC2848A1B300D12CEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F3D69PH55A;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = BawaYa_DesignRevised_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "BawaYa_DesignRevised WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "com.hada.BawaYa-DesignRevised";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hada.BawaYa-DesignRevised.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Release;
+		};
+		C4F1A6EF2848A1B300D12CEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F3D69PH55A;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BawaYa_DesignRevised/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hada.BawaYa-DesignRevised";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C4F1A6F02848A1B300D12CEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F3D69PH55A;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BawaYa_DesignRevised/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hada.BawaYa-DesignRevised";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C4F1A6F22848A1B300D12CEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F3D69PH55A;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hada.BawaYa-DesignRevisedTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BawaYa_DesignRevised.app/BawaYa_DesignRevised";
+			};
+			name = Debug;
+		};
+		C4F1A6F32848A1B300D12CEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F3D69PH55A;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hada.BawaYa-DesignRevisedTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BawaYa_DesignRevised.app/BawaYa_DesignRevised";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C4F1A6F52848A1B300D12CEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F3D69PH55A;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hada.BawaYa-DesignRevisedUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BawaYa_DesignRevised;
+			};
+			name = Debug;
+		};
+		C4F1A6F62848A1B300D12CEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F3D69PH55A;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hada.BawaYa-DesignRevisedUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BawaYa_DesignRevised;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C4F1A6F82848A1B300D12CEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F3D69PH55A;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hada.BawaYa-DesignRevised-WatchKit-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BawaYa_DesignRevised WatchKit Extension.appex/BawaYa_DesignRevised WatchKit Extension";
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		C4F1A6F92848A1B300D12CEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F3D69PH55A;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hada.BawaYa-DesignRevised-WatchKit-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BawaYa_DesignRevised WatchKit Extension.appex/BawaYa_DesignRevised WatchKit Extension";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Release;
+		};
+		C4F1A6FB2848A1B300D12CEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F3D69PH55A;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hada.BawaYa-DesignRevised-WatchKit-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "BawaYa_DesignRevised WatchKit App";
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		C4F1A6FC2848A1B300D12CEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F3D69PH55A;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hada.BawaYa-DesignRevised-WatchKit-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "BawaYa_DesignRevised WatchKit App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C4F1A6802848A1B100D12CEB /* Build configuration list for PBXProject "BawaYa_DesignRevised" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4F1A6E42848A1B300D12CEB /* Debug */,
+				C4F1A6E52848A1B300D12CEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4F1A6E62848A1B300D12CEB /* Build configuration list for PBXNativeTarget "BawaYa_DesignRevised WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4F1A6E72848A1B300D12CEB /* Debug */,
+				C4F1A6E82848A1B300D12CEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4F1A6EA2848A1B300D12CEB /* Build configuration list for PBXNativeTarget "BawaYa_DesignRevised WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4F1A6EB2848A1B300D12CEB /* Debug */,
+				C4F1A6EC2848A1B300D12CEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4F1A6EE2848A1B300D12CEB /* Build configuration list for PBXNativeTarget "BawaYa_DesignRevised" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4F1A6EF2848A1B300D12CEB /* Debug */,
+				C4F1A6F02848A1B300D12CEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4F1A6F12848A1B300D12CEB /* Build configuration list for PBXNativeTarget "BawaYa_DesignRevisedTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4F1A6F22848A1B300D12CEB /* Debug */,
+				C4F1A6F32848A1B300D12CEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4F1A6F42848A1B300D12CEB /* Build configuration list for PBXNativeTarget "BawaYa_DesignRevisedUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4F1A6F52848A1B300D12CEB /* Debug */,
+				C4F1A6F62848A1B300D12CEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4F1A6F72848A1B300D12CEB /* Build configuration list for PBXNativeTarget "BawaYa_DesignRevised WatchKit AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4F1A6F82848A1B300D12CEB /* Debug */,
+				C4F1A6F92848A1B300D12CEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4F1A6FA2848A1B300D12CEB /* Build configuration list for PBXNativeTarget "BawaYa_DesignRevised WatchKit AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4F1A6FB2848A1B300D12CEB /* Debug */,
+				C4F1A6FC2848A1B300D12CEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C4F1A67D2848A1B100D12CEB /* Project object */;
+}
