@@ -176,6 +176,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C4D3523A284DFAEF008F8B39 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		C4F1A67C2848A1B100D12CEB = {
 			isa = PBXGroup;
 			children = (
@@ -207,6 +214,7 @@
 		C4F1A6872848A1B100D12CEB /* BawaYa_DesignRevised */ = {
 			isa = PBXGroup;
 			children = (
+				C4D3523A284DFAEF008F8B39 /* Model */,
 				C4F1A6FD2848A5FC00D12CEB /* SceneDelegate.swift */,
 				C4F1A6882848A1B100D12CEB /* AppDelegate.swift */,
 				C4F1A68C2848A1B100D12CEB /* StartViewController.swift */,

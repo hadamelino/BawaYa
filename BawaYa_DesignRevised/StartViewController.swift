@@ -35,6 +35,7 @@ class StartViewController: UIViewController {
         theButton.tintColor = .white
         theButton.backgroundColor = UIColor(named: "colorPallete")
         theButton.clipsToBounds = true
+        
         return theButton
     }()
     
@@ -69,17 +70,25 @@ class StartViewController: UIViewController {
         addButton.layer.cornerRadius = 0.5 * addButton.bounds.size.width
     }
     
+    
+    @objc func addButtonPressed() {
+        print("Add button Pressed!")
+    }
+    
     func setAutoLayoutCalendar() {
         view.addSubview(calendarCollectionView)
-        calendarCollectionView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor).isActive = true
+        calendarCollectionView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 20).isActive = true
+        calendarCollectionView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 20).isActive = true
+        calendarCollectionView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -20).isActive = true
+        calendarCollectionView.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.2).isActive = true
     }
     
     func setAutoLayoutImage() {
         view.addSubview(imageView)
-        imageView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 200).isActive = true
-        imageView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -250).isActive = true
-        imageView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 20).isActive = true
-        imageView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -20).isActive = true
+        imageView.topAnchor.constraint(equalTo: calendarCollectionView.bottomAnchor, constant: 20).isActive = true
+        imageView.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.4).isActive = true
+        imageView.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.8).isActive = true
+        imageView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
     }
     
     func setAutoLayoutLabel() {
@@ -91,10 +100,11 @@ class StartViewController: UIViewController {
     
     func setAutoLayoutButton() {
         view.addSubview(addButton)
-        //addButton.topAnchor.constraint(equalTo: label.bottomAnchor, constant: 100).isActive = true
+        addButton.addTarget(self, action: #selector(addButtonPressed), for: .touchUpInside)
+        addButton.topAnchor.constraint(equalTo: label.bottomAnchor, constant: 20).isActive = true
         addButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -40).isActive = true
-        addButton.widthAnchor.constraint(equalToConstant: 60).isActive = true
-        addButton.heightAnchor.constraint(equalToConstant: 60).isActive = true
+        addButton.widthAnchor.constraint(equalTo: imageView.widthAnchor, multiplier: 0.15).isActive = true
+        addButton.heightAnchor.constraint(equalTo: imageView.widthAnchor, multiplier: 0.15).isActive = true
         addButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
 
     }
