@@ -45,8 +45,8 @@ class DateCollectionViewCell: UICollectionViewCell {
         
         bgView.topAnchor.constraint(equalTo: contentView.topAnchor).isActive = true
         bgView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor).isActive = true
-        bgView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor).isActive = true
-        bgView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor).isActive = true
+        bgView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 5).isActive = true
+        bgView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -5).isActive = true
         
         dateLabel.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 10).isActive = true
         dateLabel.bottomAnchor.constraint(equalTo: dayLabel.topAnchor, constant: 10).isActive = true

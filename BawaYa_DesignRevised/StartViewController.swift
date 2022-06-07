@@ -14,13 +14,14 @@ class StartViewController: UIViewController {
         let imageName = "startImage"
         theImageView.translatesAutoresizingMaskIntoConstraints = false
         theImageView.image = UIImage(named: imageName)
+        //theImageView.backgroundColor = .black
         return theImageView
     }()
     
     let monthLabel: UILabel = {
         let theMonthLabel = UILabel()
         theMonthLabel.translatesAutoresizingMaskIntoConstraints = false
-        theMonthLabel.font = UIFont(name: "PT Sans", size: 21)
+        theMonthLabel.font = UIFont.systemFont(ofSize: 18)
         theMonthLabel.text = "June 2022"
         return theMonthLabel
     }()
@@ -69,13 +70,10 @@ class StartViewController: UIViewController {
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewLayout())
         collectionView.isScrollEnabled = false
         collectionView.translatesAutoresizingMaskIntoConstraints = false
-
         return collectionView
     }()
     
     private let calendar = Calendar(identifier: .gregorian)
-    
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -86,12 +84,10 @@ class StartViewController: UIViewController {
         calendarCollectionView.dataSource = self
         calendarCollectionView.register(DateCollectionViewCell.self, forCellWithReuseIdentifier: "dateCell")
         
-
         setAutoLayoutCalendar()
         setAutoLayoutImage()
         setAutoLayoutLabel()
         setAutoLayoutButton()
-        
         
     }
     
@@ -102,14 +98,11 @@ class StartViewController: UIViewController {
         
         // Set Width to have 7 Items in a row -> Calendar Collection View
         let layout = UICollectionViewFlowLayout()
-        let numWeekDays = 7
-        let spacing = 10
-        let totalSpacing = spacing * (numWeekDays - 1)
-        let itemWidth = (calendarCollectionView.bounds.size.width - CGFloat(totalSpacing)) / 7
+        let numWeekDays = 7.0
+        let itemWidth = calendarCollectionView.bounds.size.width / numWeekDays
         layout.minimumInteritemSpacing = 0
         layout.minimumLineSpacing = 0
         layout.itemSize = CGSize(width: itemWidth, height: calendarCollectionView.bounds.size.height)
-        layout.sectionInset = UIEdgeInsets(top: 0, left: CGFloat(spacing), bottom: 0, right: CGFloat(spacing))
         calendarCollectionView.collectionViewLayout = layout
     }
     
@@ -143,10 +136,10 @@ class StartViewController: UIViewController {
     
     func setAutoLayoutImage() {
         view.addSubview(imageView)
-        imageView.topAnchor.constraint(equalTo: calendarCollectionView.bottomAnchor, constant: 20).isActive = true
-        imageView.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.4).isActive = true
-        imageView.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.9).isActive = true
-        imageView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        imageView.topAnchor.constraint(equalTo: calendarCollectionView.topAnchor, constant: 130).isActive = true
+        imageView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: -20).isActive = true
+        imageView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -20).isActive = true
+        imageView.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.35).isActive = true
     }
     
     func setAutoLayoutLabel() {
@@ -159,7 +152,7 @@ class StartViewController: UIViewController {
     func setAutoLayoutButton() {
         view.addSubview(addButton)
         addButton.addTarget(self, action: #selector(addButtonPressed), for: .touchUpInside)
-        addButton.topAnchor.constraint(equalTo: label.bottomAnchor, constant: 20).isActive = true
+        addButton.topAnchor.constraint(equalTo: label.bottomAnchor, constant: 100).isActive = true
         addButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -40).isActive = true
         addButton.widthAnchor.constraint(equalTo: imageView.widthAnchor, multiplier: 0.15).isActive = true
         addButton.heightAnchor.constraint(equalTo: imageView.widthAnchor, multiplier: 0.15).isActive = true
@@ -180,5 +173,5 @@ extension StartViewController: UICollectionViewDelegate, UICollectionViewDataSou
         return cell
     }
     
-    
+
 }
