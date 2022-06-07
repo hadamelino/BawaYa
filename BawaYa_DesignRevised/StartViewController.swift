@@ -25,10 +25,10 @@ class StartViewController: UIViewController {
         return theMonthLabel
     }()
     
-    let monthChevron: UIImageView = {
-        let chevron = UIImageView()
+    let monthChevron: UIButton = {
+        let chevron = UIButton()
         chevron.translatesAutoresizingMaskIntoConstraints = false
-        chevron.image = UIImage(systemName: "chevron.down")
+        chevron.setImage(UIImage(systemName: "chevron.down"), for: .normal)
         chevron.tintColor = .black
         return chevron
     }()
@@ -86,8 +86,7 @@ class StartViewController: UIViewController {
         calendarCollectionView.dataSource = self
         calendarCollectionView.register(DateCollectionViewCell.self, forCellWithReuseIdentifier: "dateCell")
         
-        
-        
+
         setAutoLayoutCalendar()
         setAutoLayoutImage()
         setAutoLayoutLabel()
@@ -118,12 +117,18 @@ class StartViewController: UIViewController {
     @objc func addButtonPressed() {
         print("Add button Pressed!")
     }
+    
+    @objc func changeMonthPressed() {
+        print("Change month pressed!")
+    }
         
     func setAutoLayoutCalendar() {
         monthStack.addArrangedSubview(monthLabel)
         monthStack.addArrangedSubview(monthChevron)
         view.addSubview(monthStack)
         view.addSubview(calendarCollectionView)
+        
+        monthChevron.addTarget(self, action: #selector(changeMonthPressed), for: .touchUpInside)
         
         monthStack.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 20).isActive = true
         monthStack.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 20).isActive = true
