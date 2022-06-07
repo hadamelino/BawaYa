@@ -12,7 +12,8 @@ class DateCollectionViewCell: UICollectionViewCell {
     let bgView: UIView = {
         let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
-        view.backgroundColor = .systemBlue
+        view.backgroundColor = UIColor(named: "colorPallete")
+        view.layer.cornerRadius = 12
         return view
     }()
     

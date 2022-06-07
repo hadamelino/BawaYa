@@ -68,7 +68,6 @@ class StartViewController: UIViewController {
         
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewLayout())
         collectionView.isScrollEnabled = false
-        collectionView.backgroundColor = .cyan
         collectionView.translatesAutoresizingMaskIntoConstraints = false
 
         return collectionView
@@ -105,11 +104,11 @@ class StartViewController: UIViewController {
         // Set Width to have 7 Items in a row -> Calendar Collection View
         let layout = UICollectionViewFlowLayout()
         let numWeekDays = 7
-        let spacing = 5
+        let spacing = 10
         let totalSpacing = spacing * (numWeekDays - 1)
         let itemWidth = (calendarCollectionView.bounds.size.width - CGFloat(totalSpacing)) / 7
-        layout.minimumLineSpacing = 0
         layout.minimumInteritemSpacing = 0
+        layout.minimumLineSpacing = 0
         layout.itemSize = CGSize(width: itemWidth, height: calendarCollectionView.bounds.size.height)
         layout.sectionInset = UIEdgeInsets(top: 0, left: CGFloat(spacing), bottom: 0, right: CGFloat(spacing))
         calendarCollectionView.collectionViewLayout = layout
@@ -134,7 +133,7 @@ class StartViewController: UIViewController {
         calendarCollectionView.topAnchor.constraint(equalTo: monthStack.bottomAnchor, constant: 10).isActive = true
         calendarCollectionView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 20).isActive = true
         calendarCollectionView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -20).isActive = true
-        calendarCollectionView.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.1).isActive = true
+        calendarCollectionView.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.08).isActive = true
     }
     
     func setAutoLayoutImage() {
@@ -176,11 +175,5 @@ extension StartViewController: UICollectionViewDelegate, UICollectionViewDataSou
         return cell
     }
     
-//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-//        // Week Days Only
-//        let numWeekDays = 7
-//
-//        return CGSize(width: collectionView.bounds.size.width / numWeekDays, height: collectionView.bounds.size.height)
-//    }
     
 }
