@@ -192,6 +192,13 @@ extension StartViewController: UICollectionViewDelegate, UICollectionViewDataSou
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "dateCell", for: indexPath) as! DateCollectionViewCell
         cell.dateLabel.text = String(calendarHelper.daysOfMonth(date: dateArray[indexPath.row]))
         cell.dayLabel.text = calendarHelper.getWeekDayString()[indexPath.row]
+        
+        if calendarHelper.daysOfMonth(date: dateArray[indexPath.row]) == calendar.dateComponents([.day], from: date).day! {
+            cell.bgView.backgroundColor = UIColor(named: "colorPallete")
+            cell.dateLabel.textColor = .white
+            cell.dayLabel.textColor = .white
+        }
+        
         return cell
     }
     
