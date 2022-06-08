@@ -22,7 +22,7 @@ class StartViewController: UIViewController {
         let theMonthLabel = UILabel()
         theMonthLabel.translatesAutoresizingMaskIntoConstraints = false
         theMonthLabel.font = UIFont.systemFont(ofSize: 18)
-        theMonthLabel.text = "June 2022"
+        theMonthLabel.text = ""
         return theMonthLabel
     }()
     
@@ -74,6 +74,9 @@ class StartViewController: UIViewController {
     }()
     
     private let calendar = Calendar(identifier: .gregorian)
+    private let calendarHelper = CalendarHelper()
+    private let date = Date()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -116,6 +119,7 @@ class StartViewController: UIViewController {
     }
         
     func setAutoLayoutCalendar() {
+        monthLabel.text = calendarHelper.getMonthString(date: date) + " " + calendarHelper.getYearString(date: date)
         monthStack.addArrangedSubview(monthLabel)
         monthStack.addArrangedSubview(monthChevron)
         view.addSubview(monthStack)
@@ -170,6 +174,8 @@ extension StartViewController: UICollectionViewDelegate, UICollectionViewDataSou
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "dateCell", for: indexPath) as! DateCollectionViewCell
+        cell.dateLabel.text = ""
+        cell.dayLabel.text = ""
         return cell
     }
     

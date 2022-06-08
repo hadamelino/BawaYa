@@ -17,7 +17,7 @@ class DateCollectionViewCell: UICollectionViewCell {
         return view
     }()
     
-    let dateLabel: UILabel = {
+    var dateLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textAlignment = .center
@@ -27,7 +27,7 @@ class DateCollectionViewCell: UICollectionViewCell {
         return label
     }()
     
-    let dayLabel: UILabel = {
+    var dayLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textAlignment = .center
