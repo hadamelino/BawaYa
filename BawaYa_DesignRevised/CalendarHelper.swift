@@ -38,7 +38,31 @@ struct CalendarHelper {
     
     func weekDaysOfMonth(date: Date) -> Int {
         let components = calendar.dateComponents([.weekday], from: date)
-        return components.weekday!
+        return components.weekday! - 1
     }
+    
+    func getWeekDayString() -> [String] {
+        return dateFormatter.shortWeekdaySymbols
+    }
+    
+    func addDays(date: Date, days: Int) -> Date {
+        return calendar.date(byAdding: .day, value: days, to: date)!
+    }
+    
+    func sundayForDate(date: Date) -> Date {
+        var current = date
+        let aWeekAgo = addDays(date: current, days: -7)
+        let dayAWeekAgo = calendar.dateComponents([.weekday], from: aWeekAgo).weekday! - 1
+        
+        if dayAWeekAgo == 1 {
+            //Sunday
+            return aWeekAgo
+        } else {
+            current = addDays(date: aWeekAgo, days: dayAWeekAgo)
+            return current
+        }
+    
+    }
+    
     
 }

@@ -32,7 +32,7 @@ class DateCollectionViewCell: UICollectionViewCell {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textAlignment = .center
         label.font = UIFont.systemFont(ofSize: 12, weight: .regular)
-        label.text = "Mon"
+        label.text = ""
        return label
     }()
     

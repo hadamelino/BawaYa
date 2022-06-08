@@ -76,6 +76,7 @@ class StartViewController: UIViewController {
     private let calendar = Calendar(identifier: .gregorian)
     private let calendarHelper = CalendarHelper()
     private let date = Date()
+    var dateArray = [Date]()
     
     
     override func viewDidLoad() {
@@ -87,11 +88,12 @@ class StartViewController: UIViewController {
         calendarCollectionView.dataSource = self
         calendarCollectionView.register(DateCollectionViewCell.self, forCellWithReuseIdentifier: "dateCell")
         
+        setDateCalendar()
         setAutoLayoutCalendar()
         setAutoLayoutImage()
         setAutoLayoutLabel()
         setAutoLayoutButton()
-        
+    
     }
     
     override func viewDidLayoutSubviews() {
@@ -118,6 +120,20 @@ class StartViewController: UIViewController {
         print("Change month pressed!")
     }
         
+    func setDateCalendar() {
+        dateArray.removeAll()
+        
+        let lastSunday = calendarHelper.sundayForDate(date: date)
+        let nextSunday = calendarHelper.addDays(date: date, days: 7)
+        var current = lastSunday
+        
+        while (current < nextSunday) {
+            current = calendarHelper.addDays(date: current, days: 1)
+            dateArray.append(current)
+        }
+    
+    }
+    
     func setAutoLayoutCalendar() {
         monthLabel.text = calendarHelper.getMonthString(date: date) + " " + calendarHelper.getYearString(date: date)
         monthStack.addArrangedSubview(monthLabel)
@@ -174,8 +190,8 @@ extension StartViewController: UICollectionViewDelegate, UICollectionViewDataSou
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "dateCell", for: indexPath) as! DateCollectionViewCell
-        cell.dateLabel.text = ""
-        cell.dayLabel.text = ""
+        cell.dateLabel.text = String(calendarHelper.daysOfMonth(date: dateArray[indexPath.row]))
+        cell.dayLabel.text = calendarHelper.getWeekDayString()[indexPath.row]
         return cell
     }
     
