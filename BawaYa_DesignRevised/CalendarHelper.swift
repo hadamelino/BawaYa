@@ -42,7 +42,7 @@ struct CalendarHelper {
     }
     
     func getWeekDayString() -> [String] {
-        return dateFormatter.shortWeekdaySymbols
+        return ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
     }
     
     func addDays(date: Date, days: Int) -> Date {
